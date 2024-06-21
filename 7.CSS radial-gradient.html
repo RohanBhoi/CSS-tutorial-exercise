@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title> CSS Gradient</title>
+        <style>
+            #main {
+                height: 400px;
+                width: 600px;
+                background-image: radial-gradient(circle, violet, indigo, blue, green, yellow, orange, red);
+            }
+
+            .hello {
+                text-align: center;
+                font-size: 40px;
+                color: white;
+                font-weight: bold;
+                padding: 130px;
+            }
+
+            .div2 {
+                font-size: 35px;
+                color: white;
+                text-align: center;
+            }
+
+            .demo div {
+                float: left;
+            }
+
+            .demo1 div {
+                float: left;
+            }
+
+            #main1 {
+                height: 400px;
+                width: 600px;
+                background-image: radial-gradient(
+                    farthest-side at left bottom, red, yellow, cyan
+                );
+                margin: 20px;
+            }
+
+            #main2 {
+                height: 400px;
+                width: 600px;
+                background-image: radial-gradient(
+                    farthest-corner at right bottom, blue, yellow,green
+                );
+                margin: 20px;
+            }
+
+            #main3 {
+                height: 400px;
+                width: 600px;
+                background-image: radial-gradient(
+                    closest-side, red, yellow, lightgreen
+                );
+                margin: 20px;
+            }
+
+            #main4 {    
+                height: 400px;    
+                width: 600px;    
+                background-image: radial-gradient(
+                    closest-corner , blue, yellow, green);    
+                margin:20px;  
+            }  
+
+            .size {
+                text-align: center;
+                font-size: 40px;
+                color: black;
+                font-weight: bold;
+                padding-top: 130px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="main">
+            <div class="hello"> Hello World</div>
+            <div class="div2"> Welcome to the javaTpoint.com </div>
+        </div>
+
+        <div class="demo">
+            <div id="main1">
+                <div class="size">farthest-side at the left bottom</div>
+            </div>
+            <div id="main2">
+                <div class="size">farthest-corner at right bottom</div>
+            </div>
+        </div>
+
+        <div class="demo1">
+            <div id="main3">
+                <div class="size">closest-side</div>
+            </div>
+            <div id="main4">
+                <div class="size">closest-corner</div>
+            </div>
+        </div>
+    </body>
+</html>

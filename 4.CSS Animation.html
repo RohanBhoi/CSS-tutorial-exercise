@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>        
+        <style>
+            #div1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            -webkit-animation: myfirst 6s;
+            animation: myfirst 6s;
+            }
+
+            #div2{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: relative;
+            -webkit-animation: mysecond 6s infinite;
+            animation: mysecond 6s infinite;
+            }
+
+            /* Chrome, Safari, Opera  */
+            @-webkit-keyframes myfirst {
+                from {background: red;}
+                to {background: yellow;}
+            }
+
+            /* Standard syntax */
+            @keyframes myfirst {
+                from {background: red;}
+                to {background: yellow;}
+                
+            }
+
+            /* Chrome, Safari, Opera  */
+            @-webkit-keyframes mysecond {
+                0%   {background: red;left: 0px; top: 0px;}
+                25%  {background:yellow; left:300px; top:0px;}  
+                50%  {background:blue; left:200px; top:300px;}  
+                75%  {background:green; left:0px; top:200px;}  
+                100% {background:red; left:0px; top:0px;} 
+            }
+
+            /* Standard syntax */
+            @keyframes mysecond {
+                0%   {background: red;left: 0px; top: 0px;}
+                25%  {background:yellow; left:300px; top:0px;}  
+                50%  {background:blue; left:200px; top:300px;}  
+                75%  {background:green; left:0px; top:200px;}  
+                100% {background:red; left:0px; top:0px;}
+                
+            }
+        </style>
+    </head>
+
+    <body>
+        <p> <b> Note: </b> the IE9 and earlier versions don't support CSS3 animation property.</p>
+       
+        <p>See the rectangle background from RED to BLACK.</p>
+        <div id="div1"></div>  
+
+        <p>See the rectangle background from RED to BLACK.</p>
+        <div id="div2"></div>  
+    </body>
+</html>

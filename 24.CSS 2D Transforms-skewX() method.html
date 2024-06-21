@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div {
+                margin: 150px;  
+                width: 200px;  
+                height: 100px;  
+                background-color: lightpink;  
+                border: 1px solid black;
+            }
+
+            div#myDivX {
+                transform: skewX(13deg);
+            }
+
+            div#myDivY {
+                transform: skewY(25deg);
+            }
+
+            div#myDiv {
+                transform: skew(30deg, 20deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div>  
+            This a normal div element.  
+        </div>  
+
+        <div id="myDivX">  
+            This div element is skewed 30 degrees along the X-axis.  
+        </div> 
+
+        <div id="myDivY">  
+            This div element is skewed 30 degrees along the Y-axis.  
+        </div> 
+
+        <div id="myDiv">  
+            This div element is skewed 30 degrees along the X-axis, and 20 degrees along the Y-axis.  
+        </div>  
+    </body>
+</html>

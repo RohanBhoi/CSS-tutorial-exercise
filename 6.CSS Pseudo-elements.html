@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <style>
+            body{
+                text-align: center;
+            }
+
+            h1.num1::first-letter{                   
+                font-family: Lucida Calligraphy;  
+                font-size: 3cm;  
+                color: red;  
+                text-shadow: 5px 8px 9px green;  
+            }
+
+            h1{
+                color: orange;
+            }
+
+            h1.example::first-line {   
+                font-family: Lucida Calligraphy;  
+                font-size: 1cm;  
+                color: red;  
+                text-shadow: 5px 8px 9px green;  
+            }      
+
+            h3::before {   
+                content: "'Hello World.'";  
+                color: red;  
+            } 
+
+            h5::after {   
+                content: "'Welcome to the javaTpoint.com.'";  
+                color: red;  
+            }   
+
+            h1::selection {  
+                color: red;  
+            } 
+        </style>
+    </head>
+    <body>
+        <h1 class="num1"> Welcome to the javaTpoint.com </h1>   
+        <h1> This is an example of ::first-letter pseudo-element. </h1> 
+        
+        <h1 class="example"> Welcome to the javaTpoint.com. This site is developed so that students may learn computer science related technologies easily. The javaTpoint.com is committed to provide easy and in-depth tutorials on various technologies. </h1>   
+        <h2> This is an example of ::first-line pseudo-element. </h2> 
+
+        <h3> This is an example of ::before pseudo-element. </h3>  
+        <h4> In the first line the "Hello World" has added by using the pseudo-element ::before </h4>  
+
+        <h5> Hello World. </h5>   
+        <h6> This is an example of ::after pseudo-element. </h6>  
+        <h6> In the first line the "Welcome to the javaTpoint.com." has added by using the pseudo-element ::after </h6>  
+    </body>
+</html>

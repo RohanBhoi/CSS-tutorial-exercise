@@ -1,0 +1,34 @@
+<!DOCTYPE html>  
+<html>  
+    <head>  
+        <style>  
+            uul.breadcrumb {  
+                padding: 8px 16px;  
+                list-style: none;  
+                background-color: #631bd1;  
+            }  
+            ul.breadcrumb li {display: inline;}  
+
+            ul.breadcrumb li+li:before {  
+                padding: 8px;  
+                color: black;  
+                content: "/\00a0";  
+            }  
+
+            ul.breadcrumb li a {color: rgb(224, 147, 32);}
+            
+        </style>  
+    </head>  
+    <body>  
+        <h2>JavaTpoint</h2>  
+
+        <ul class="breadcrumb">  
+            <li><a href="#">Java</a></li>  
+            <li><a href="#">Oracle</a></li>  
+            <li><a href="#">PHP</a></li>  
+            <li>AngularJS</li>  
+        </ul>  
+
+        <p><strong>Note:</strong>This is an example of Breadcrumb pagination.</p>  
+    </body>  
+</html>  

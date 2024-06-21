@@ -1,0 +1,67 @@
+<!DOCTYPE>  
+<html>  
+    <head>  
+        <style> 
+            #grad1 {  
+                height: 100px;  
+                background: -webkit-linear-gradient(red, yellow); /* For Safari 5.1 to 6.0 */  
+                background: -o-linear-gradient(red, yellow); /* For Opera 11.1 to 12.0 */  
+                background: -moz-linear-gradient(red, yellow); /* For Firefox 3.6 to 15 */  
+                background: linear-gradient(red, yellow); /* Standard syntax (must be last) */  
+            }   
+            
+            #grad2 {  
+                height: 100px;  
+                background: -webkit-linear-gradient(left, red, yellow); /* For Safari 5.1 to 6.0 */  
+                background: -o-linear-gradient(right, red, yellow)); /* For Opera 11.1 to 12.0 */  
+                background: -moz-linear-gradient(right, red, yellow); /* For Firefox 3.6 to 15 */  
+                background: linear-gradient(to right, red , yellow); /* Standard syntax (must be last) */  
+            }  
+
+            #grad3 {  
+                height: 100px;  
+                background: -webkit-linear-gradient(left top, red , yellow); /* For Safari 5.1 to 6.0 */  
+                background: -o-linear-gradient(bottom right, red, yellow); /* For Opera 11.1 to 12.0 */  
+                background: -moz-linear-gradient(bottom right, red, yellow); /* For Firefox 3.6 to 15 */  
+                background: linear-gradient(to bottom right, red , yellow); /* Standard syntax (must be last) */  
+            }  
+
+            #grad4 {  
+                height: 150px;  
+                width: 200px;  
+                background: -webkit-radial-gradient(blue, yellow, red); /* Safari 5.1 to 6.0 */  
+                background: -o-radial-gradient(blue, yellow, red); /* For Opera 11.6 to 12.0 */  
+                background: -moz-radial-gradient(blue, yellow, red); /* For Firefox 3.6 to 15 */  
+                background: radial-gradient(blue, yellow, red); /* Standard syntax (must be last) */  
+            }  
+
+            #grad5 {  
+                height: 150px;  
+                width: 200px;  
+                background: -webkit-radial-gradient(blue 5%, yellow 15%, red 60%); /* Safari 5.1 to 6.0 */  
+                background: -o-radial-gradient(blue 5%, yellow 15%, red 60%); /* For Opera 11.6 to 12.0 */  
+                background: -moz-radial-gradient(blue 5%, yellow 15%, red 60%); /* For Firefox 3.6 to 15 */  
+                background: radial-gradient(blue 5%, yellow 15%, red 60%); /* Standard syntax (must be last) */  
+            }
+        </style>  
+    </head>  
+    <body>  
+        <h3>Linear Gradient - Top to Bottom</h3>  
+        <p>This linear gradient starts at the top. It starts red, transitioning to yellow:</p>  
+        <div id="grad1"></div>  
+
+        <h3>Linear Gradient -Left to Right</h3>
+        <p>This linear gradient starts at the left. It starts red, transitioning to yellow:</p> 
+        <div id="grad2"></div>  
+
+        <h3>Linear Gradient - Diagonal</h3>
+        <p>This linear gradient starts at top left. It starts red, transitioning to yellow:</p> 
+        <div id="grad3"></div> 
+
+        <h3>Radial Gradient - Evenly Spaced Color Stops</h3>  
+        <div id="grad4"></div> 
+        
+        <h3>Radial Gradient - Differently Spaced Color Stops</h3>  
+        <div id="grad5"></div> 
+    </body>  
+</html>  
